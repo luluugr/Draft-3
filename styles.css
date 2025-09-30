@@ -1,1 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #002349;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.seccion-menu {
+  display: none;
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.seccion-menu.active {
+  display: block;
+}
+
+.descripcion {
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.pantalla-inicio {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.velocimetro {
+  position: relative;
+  width: 250px;
+  height: 120px;
+  margin: 20px auto;
+}
+
+.velocimetro-base {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 125px;
+  border-top-right-radius: 125px;
+  background: #ddd;
+  position: relative;
+  overflow: hidden;
+}
+
+.aguja {
+  width: 4px;
+  height: 100px;
+  background: red;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: rotate(-90deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.aqi-valor {
+  font-size: 24px;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+
+.predicciones {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.dias {
+  flex: 1;
+}
+
+.dia {
+  background: #BAC095;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+}
+
+.detalle-prediccion {
+  flex: 2;
+  background: #e9ecef;
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 150px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  background: #002349;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #004080;
+}
+
+.form-oculto {
+  display: none;
+}
+
+form input, form select {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 80%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
