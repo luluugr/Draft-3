@@ -28,8 +28,8 @@ nav a {
 .seccion-menu {
   display: none;
   margin: 20px auto;
-  max-width: 900px;
-  padding: 20px;
+  max-width: 800px;
+
 }
 
 .seccion-menu.active {
