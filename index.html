@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Aire Local</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#logo">Logo</a></li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#recomendaciones">Mis Recomendaciones</a></li>
+        <li><a href="#registro">Mi cuenta</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- LOGO -->
+  <section id="logo" class="seccion-menu active">
+    <h2>Logo</h2>
+    <p>Aquí pondremos la imagen de nuestro logo.</p>
+  </section>
+
+  <!-- INICIO -->
+  <section id="inicio" class="seccion-menu">
+    <div class="pantalla-inicio">
+      <h1>Bienvenido a Aire Local</h1>
+      <p class="descripcion">
+        Conoce la calidad del aire en tu ciudad en tiempo real y recibe consejos
+        para cuidarte. ¡Tu bienestar y el del planeta están en tus manos!
+      </p>
+    </div>
+
+    <h2 style="text-align:center;">Calidad del Aire Actual</h2>
+    <p style="text-align:center;">Ubicación: <span id="ubicacion">Cargando...</span></p>
+
+    <!-- Velocímetro -->
+    <div class="velocimetro">
+      <div class="velocimetro-base"></div>
+      <div class="aguja"></div>
+    </div>
+    <span class="aqi-valor">--</span>
+
+    <!-- Predicciones -->
+    <div class="predicciones">
+      <div class="dias">
+        <div class="dia">
+          <h3>Día 1</h3>
+          <button class="ver-mas" data-dia="1">Ver más</button>
+        </div>
+        <div class="dia">
+          <h3>Día 2</h3>
+          <button class="ver-mas" data-dia="2">Ver más</button>
+        </div>
+        <div class="dia">
+          <h3>Día 3</h3>
+          <button class="ver-mas" data-dia="3">Ver más</button>
+        </div>
+      </div>
+      <div class="detalle-prediccion" id="detallePrediccion">
+        (Aquí podrás ver la predicción de calidad del aire para los próximos 3 días.)
+      </div>
+    </div>
+  </section>
+
+  <!-- MIS RECOMENDACIONES -->
+  <section id="recomendaciones" class="seccion-menu">
+    <h2 id="saludoUsuario">Hola!</h2>
+    <p>Estas son tus recomendaciones personalizadas!</p>
+    <ul>
+      <li>Ejemplo de recomendación 1</li>
+      <li>Ejemplo de recomendación 2</li>
+      <li>Ejemplo de recomendación 3</li>
+    </ul>
+  </section>
+
+  <!-- REGISTRO -->
+  <section id="registro" class="seccion-menu">
+    <div class="perfil">
+      <h2>Mi Cuenta</h2>
+      <p id="usuarioGuardado">No tienes una cuenta? 
+        <button id="abrirRegistro">Regístrate</button>
+      </p>
+      <form id="formRegistro" class="form-oculto">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="text" id="apellido" placeholder="Apellido" required>
+        <input type="number" id="edad" placeholder="Edad" required>
+        <select id="estado">
+          <option value="">Selecciona tu estado</option>
+          <option value="California">California</option>
+          <option value="Texas">Texas</option>
+          <option value="New York">New York</option>
+          <!-- Agrega más -->
+        </select>
+        <input type="email" id="correo" placeholder="Correo" required>
+        <input type="password" id="contrasena" placeholder="Contraseña" required>
+        <button type="submit">Crear cuenta</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
