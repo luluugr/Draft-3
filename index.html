@@ -17,16 +17,11 @@
     </nav>
   </header>
 
-  <!-- LOGO -->
-  <section id="logo" class="seccion-menu active">
-    <h2>Logo</h2>
-    <p>Aquí pondremos la imagen de nuestro logo.</p>
-  </section>
 
   <!-- INICIO -->
   <section id="inicio" class="seccion-menu">
     <div class="pantalla-inicio">
-      <h1>Bienvenido a Aire Local</h1>
+      <h1>Bienvenido a AireAware</h1>
       <p class="descripcion">
         Conoce la calidad del aire en tu ciudad en tiempo real y recibe consejos
         para cuidarte. ¡Tu bienestar y el del planeta están en tus manos!
@@ -65,41 +60,38 @@
     </div>
   </section>
 
-  <!-- MIS RECOMENDACIONES -->
-  <section id="recomendaciones" class="seccion-menu">
-    <h2 id="saludoUsuario">Hola!</h2>
+  <!-- Mis Recomendaciones -->
+<section id="recomendaciones" class="seccion-menu" style="display:none;">
+    <h2 id="saludoUsuario">Hola! [Nombre]</h2>
     <p>Estas son tus recomendaciones personalizadas!</p>
     <ul>
-      <li>Ejemplo de recomendación 1</li>
-      <li>Ejemplo de recomendación 2</li>
-      <li>Ejemplo de recomendación 3</li>
+        <li>Ejemplo de recomendación 1</li>
+        <li>Ejemplo de recomendación 2</li>
+        <li>Ejemplo de recomendación 3</li>
     </ul>
-  </section>
+</section>
 
-  <!-- REGISTRO -->
-  <section id="registro" class="seccion-menu">
+<!-- Mi Cuenta / Registro -->
+<section id="registro" class="seccion-menu" style="display:none;">
     <div class="perfil">
-      <h2>Mi Cuenta</h2>
-      <p id="usuarioGuardado">No tienes una cuenta? 
-        <button id="abrirRegistro">Regístrate</button>
-      </p>
-      <form id="formRegistro" class="form-oculto">
-        <input type="text" id="nombre" placeholder="Nombre" required>
-        <input type="text" id="apellido" placeholder="Apellido" required>
-        <input type="number" id="edad" placeholder="Edad" required>
-        <select id="estado">
-          <option value="">Selecciona tu estado</option>
-          <option value="California">California</option>
-          <option value="Texas">Texas</option>
-          <option value="New York">New York</option>
-          <!-- Agrega más -->
-        </select>
-        <input type="email" id="correo" placeholder="Correo" required>
-        <input type="password" id="contrasena" placeholder="Contraseña" required>
-        <button type="submit">Crear cuenta</button>
-      </form>
+        <h2>Mi Cuenta</h2>
+        <p id="usuarioGuardado">No tienes una cuenta? <button id="abrirRegistro">Regístrate</button></p>
+        <form id="formRegistro" class="form-oculto">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="text" id="apellido" placeholder="Apellido" required>
+            <input type="number" id="edad" placeholder="Edad" required>
+            <select id="estado">
+                <option value="">Selecciona tu estado</option>
+                <option value="New York">New York</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <!-- Agrega más estados de EUA -->
+            </select>
+            <input type="email" id="correo" placeholder="Correo" required>
+            <input type="password" id="contrasena" placeholder="Contraseña" required>
+            <button type="submit">Crear cuenta</button>
+        </form>
     </div>
-  </section>
+</section>
 
   <script src="script.js"></script>
 </body>
